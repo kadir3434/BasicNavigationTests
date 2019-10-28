@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class NavigationTests {
     public static void main(String[] args) {
-        String OS = "windows";
+        String OS = System.getProperty("os.name");
         String browser = "chrome";
         if(browser.equalsIgnoreCase("chrome")){
             testWithChrome();
